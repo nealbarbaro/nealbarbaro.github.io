@@ -2,6 +2,25 @@ $(document).on("ready", function(){
   $(".headline-name").fitText(1.2, { minFontSize: '10px', maxFontSize: '400px' });
   $(".headline-title").fitText(1.2, { minFontSize: '3px', maxFontSize: '20px' });
 
+  // Event Handlers
+  var $title = $('.headline-title');
+
+  $('#about-nav').on('click', function(){
+    $title.html("full stack web developer");
+  });
+
+  $('#projects-nav').on('click', function(){
+    $title.html("projects");
+  });
+
+  $('#resume-nav').on('click', function(){
+    $title.html("resume");
+  });
+
+  $('#contact-nav').on('click', function(){
+    $title.html("contact");
+  });
+
   // SliceBox:
   $(function() {
     var Page = (function() {
