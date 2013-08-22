@@ -1,33 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/nav.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="js/modernizr-2.6.2.min.js"></script>
-
+    <!-- <script src="js/modernizr-2.6.2.min.js"></script> -->
   </head>
   <body>
-    <h1>Coming soon!</h1>
+<div class="container">
 
-  <button class="cn-button" id="cn-button">+</button>
-  <div class="cn-wrapper" id="cn-wrapper">
-    <ul>
-      <li><a href="#"><span class="icon-picture">About</span></a></li>
-      <li><a href="#"><span class="icon-headphones">Projects</span></a></li>
-      <li><a href="#"><span class="icon-home"></span>Resume</a></li>
-      <li><a href="#"><span class="icon-facetime-video">Contact</span></a></li>
+  <header>
+    <nav>
+      <a id="about">About</a>
+      <a id="projects">Projects</a>
+      <a id="resume">Resume</a>
+      <a id="contact">Contact</a>
+    </nav>
+  </header>
+
+    <div id="about">
+    <div class="top-bar">
+      <h2 class="headline-name">neal barbaro</h2>
+      <h4 class="headline-title">full stack web developer</h4>
+    </div>
+
+    <section>
+      <p>Tumblr occaecat nulla, sed eiusmod pop-up photo booth sustainable. YOLO organic ex, ut asymmetrical ugh selfies wayfarers synth messenger bag hoodie. Ennui american apparel skateboard ad vero. Vero ethical veniam, gluten-free bespoke before they sold out minim sint. Irure small batch four loko artisan ex. Wes Anderson lo-fi butcher organic reprehenderit, cillum dreamcatcher hella irony semiotics non direct trade before they sold out. Nisi qui photo booth, scenester laborum deep v fingerstache kogi sustainable typewriter sapiente.</p>
+
+      <p>Street art whatever mixtape american apparel, placeat McSweeney's church-key cupidatat mustache deserunt. Farm-to-table voluptate cliche tattooed dolore, tousled shoreditch. Post-ironic deep v Austin eu readymade, fanny pack squid laboris keytar lomo PBR aliqua mumblecore narwhal. Fap irony photo booth chillwave authentic retro. Raw denim cupidatat vegan PBR vero. Assumenda wolf meggings Neutra, High Life incididunt aesthetic qui. Art party locavore 90's blog whatever.</p>
+    </section>
+  <div> <!-- about -->
+
+  <div id="projects">
+    <ul id="sb-slider" class="sb-slider">
+      <li>
+          <a href="#" target="_blank">
+              <img src="images/1.jpg" alt="image1"/>
+          </a>
+          <div class="sb-description">
+              <h3>Creative Lifesaver</h3>
+          </div>
+      </li>
+      <li>
+          <img src="images/2.jpg" alt="image2"/>
+          <div class="sb-description">
+              <h3>...</h3>
+          </div>
+      </li>
     </ul>
+
+  </div> <!-- projects -->
+
+  <div id="resume">
   </div>
-  <div id="cn-overlay" class="cn-overlay"></div>
 
+  <div id="contact">
+  </div>
 
-
+</div> <!-- container -->
 
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script src="js/jquery.fittext.js"></script>
   <script src="js/script.js"></script>
   </body>
 </html>
