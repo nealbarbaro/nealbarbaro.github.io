@@ -10,13 +10,23 @@
   font-style: normal;
 }
 
+* {
+  position: relative;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 html, body {
   height: 100%;
 }
 
 body {
   font-family: 'Lato', Arial, sans-serif;
-  background: #52be7f;
+  /*background: #52be7f;*/
+  background: #7f8c8d;
   color: #fff;
 }
 
@@ -25,14 +35,20 @@ a {
 }
 
 .container > header {
-  margin: 0 auto;
-  padding: 1.2em;
+  z-index: 100;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  position: fixed;
+  padding: 1em;
   text-align: center;
-  background: rgba(0,0,0,0.01);
+  /*background: #52be7f;*/
+  background: #7f8c8d;
 }
 
 nav {
-  padding-top: 0.3em;
+  margin: 0 auto;
+  padding-top: 0.3em 0.3em;
   font-size: 0.9em;
   font-family: 'Lato', Arial, sans-serif;
 }
@@ -46,36 +62,38 @@ nav a {
   border: 3px solid #fff;
   color: #fff;
   font-weight: 700;
+  cursor: pointer;
 }
 
 nav a:hover {
   opacity: 0.6;
 }
 
-.container > section {
-  margin: 0 auto;
-  padding: 2em;
-  font-size: 1.4em;
-  max-width: 50em;
-}
-
-.container > section p {
-  padding: 0.8em 0;
-  text-align: justify;
-  opacity: 0.8;
-  font-weight: 300;
-  line-height: 1.4;
-}
-
 .top-bar {
   position: relative;
-    margin-bottom: 3em;
-      height: 15em;
-        background: rgba(0,0,0,0.05);
+  top: 5.7em;
+  margin-bottom: 3em;
+  background: rgba(0,0,0,0.1);
+  font-family: 'Lato', Arial, sans-serif;
 }
 
 .top-bar > h2 {
-  display: block;
+  position: relative;
+  margin-left: 2%;
+  white-space: nowrap;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  font-style: italic;
+  opacity: 0.5;
+  cursor: default;
+  letter-spacing:0.3em;
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+
+.top-bar h4 {
+  margin: 0 auto;
   white-space: nowrap;
   text-transform: uppercase;
   text-align: center;
@@ -83,7 +101,22 @@ nav a:hover {
   font-style: italic;
   opacity: 0.5;
   cursor: default;
-  font-size: 400px;
   letter-spacing:0.3em;
+  padding-bottom: 10px;
 
+}
+
+.container > section {
+  padding: 2em;
+  font-size: 1.4em;
+  max-width: 50em;
+  margin: 0 auto;
+}
+
+.container > section p {
+  padding: 0.8em 0;
+  text-align: justify;
+  opacity: 0.5;
+  font-weight: 300;
+  line-height: 1.4;
 }
