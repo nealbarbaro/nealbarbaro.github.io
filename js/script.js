@@ -1,6 +1,7 @@
 $(document).on("ready", function(){
   $(".headline-name").fitText(1.2, { minFontSize: '10px', maxFontSize: '400px' });
   $(".headline-title").fitText(1.2, { minFontSize: '3px', maxFontSize: '20px' });
+  $('#projects').addClass('hidden');
 
   // Event Handlers
   var $title = $('.headline-title');
@@ -9,12 +10,14 @@ $(document).on("ready", function(){
   $('#about-nav').on('click', function(){
     $title.html("full stack web developer");
     $nav_item.css('display', 'none');
+
     $('#about-desc').css('display', 'block');
   });
 
   $('#projects-nav').on('click', function(){
     $title.html("projects");
     $nav_item.css('display', 'none');
+    $('#projects').removeClass('hidden');
     $('#projects').css('display', 'block');
   });
 

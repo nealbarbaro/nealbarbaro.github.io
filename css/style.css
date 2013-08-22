@@ -127,10 +127,31 @@ padding-top: 85px;
   padding-top: 3em;
 }
 
+.hidden {
+  visibility: hidden;
+
+}
+
 #resume {
   display: none;
 }
 
 #contact {
   display: none;
+    text-align:center;
+
+  font-size: 1.4em;
+  padding-top: 3em;
+}
+
+#contact > a{
+
+  padding: 0.6em;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+i {
+  color: #fff;
+
 }
