@@ -4,21 +4,30 @@ $(document).on("ready", function(){
 
   // Event Handlers
   var $title = $('.headline-title');
+  var $nav_item = $('.nav-item');
 
   $('#about-nav').on('click', function(){
     $title.html("full stack web developer");
+    $nav_item.css('display', 'none');
+    $('#about-desc').css('display', 'block');
   });
 
   $('#projects-nav').on('click', function(){
     $title.html("projects");
+    $nav_item.css('display', 'none');
+    $('#projects').css('display', 'block');
   });
 
   $('#resume-nav').on('click', function(){
     $title.html("resume");
+    $nav_item.css('display', 'none');
+    $('#resume').css('display', 'block');
   });
 
   $('#contact-nav').on('click', function(){
     $title.html("contact");
+    $nav_item.css('display', 'none');
+    $('#contact').css('display', 'block');
   });
 
   // SliceBox:
