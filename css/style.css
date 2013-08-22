@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: 'Lato', Arial, sans-serif;
   background: #52be7f;
@@ -31,3 +35,13 @@ nav a {
   font-weight: 700;
 }
 
+nav a:hover {
+  opacity: 0.6;
+}
+
+.container > section {
+  margin: 0 auto;
+  padding: 2em;
+  font-size: 1.4em;
+  max-width: 50em;
+}
