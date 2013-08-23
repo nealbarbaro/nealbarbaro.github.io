@@ -85,7 +85,6 @@ padding-top: 85px;
   opacity: 0.5;
   cursor: default;
   letter-spacing:0.3em;
-
 }
 
 .top-bar h4 {
@@ -102,7 +101,6 @@ padding-top: 85px;
   opacity: 0.5;
   cursor: default;
   letter-spacing:0.3em;
-
 }
 
 #about-desc {
@@ -118,7 +116,7 @@ padding-top: 85px;
 .container > #about-desc p {
   padding: 0.3em;
   text-align: justify;
-  opacity: 0.5;
+  opacity: 0.9;
   font-weight: 300;
   line-height: 1.4;
 }
@@ -153,5 +151,14 @@ padding-top: 85px;
 
 i {
   color: #fff;
+}
 
+.web-title{
+  padding-bottom: 5px !important;
+  margin-bottom: 0;
+}
+
+.web-list{
+  padding-top: 5px !important;
+  margin-top: 5px;
 }
